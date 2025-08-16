@@ -43,8 +43,6 @@ RUN update-alternatives --install /sbin/iptables iptables /sbin/iptables-nft 10 
 
 # Set Environment
 ENV DEBUG=Server,WireGuard
-ENV INSECURE=false
-ENV INIT_ENABLED=false
 ENV DISABLE_IPV6=true
 
 # Tune network
