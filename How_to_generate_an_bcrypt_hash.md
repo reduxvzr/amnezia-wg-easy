@@ -17,7 +17,7 @@ PASSWORD_HASH='$2b$12$coPqCsPtcFO.Ab99xylBNOW4.Iu7OOA2/ZIboHN6/oyxca3MWo7fW' // 
 ```
 If a password is not provided, the tool will prompt you for one :
 ```sh
-docker run -it ghcr.io/wg-easy/wg-easy wgpw
+docker run -it ghcr.io/reduxvzr/amnezia-wg-easy wgpw
 Enter your password:      // hidden prompt, type in your password
 PASSWORD_HASH='$2b$12$coPqCsPtcFO.Ab99xylBNOW4.Iu7OOA2/ZIboHN6/oyxca3MWo7fW'
 ```
