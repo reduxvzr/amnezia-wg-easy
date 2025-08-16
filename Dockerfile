@@ -53,9 +53,9 @@ RUN echo -e " \n\
   net.core.wmem_max = 67108864 \n\
   net.core.netdev_max_backlog = 250000 \n\
   net.core.somaxconn = 4096 \n\
+  net.core.default_qdisc = fq_codel \n\
   \n\
   net.ipv4.tcp_syncookies = 1 \n\
-  net.ipv4.tcp_tw_reuse = 1 \n\
   net.ipv4.tcp_tw_recycle = 0 \n\
   net.ipv4.tcp_fin_timeout = 30 \n\
   net.ipv4.tcp_keepalive_time = 1200 \n\
@@ -67,7 +67,7 @@ RUN echo -e " \n\
   net.ipv4.tcp_rmem = 4096 87380 67108864 \n\
   net.ipv4.tcp_wmem = 4096 65536 67108864 \n\
   net.ipv4.tcp_mtu_probing = 1 \n\
-  net.ipv4.tcp_congestion_control = hybla \n\
+  net.ipv4.tcp_congestion_control = bbr \n\
   net.ipv4.ip_forward=1 \n\
   net.ipv4.conf.all.src_valid_mark=1 \n\
   # for low-latency network, use cubic instead \n\
